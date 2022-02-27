@@ -10,8 +10,9 @@ A simple file uploader using express-fileupload.
   <body>
     <form ref='uploadForm' 
       id='uploadForm' 
-      action='http://localhost:7000/upload' 
-      method='post' 
+      action='/upload' 
+      method='post'
+      target='_blank'
       encType="multipart/form-data">
         <input type="file" name="csvFile" />
         <input type='submit' value='Upload!' />
